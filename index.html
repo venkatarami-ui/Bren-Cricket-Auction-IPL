@@ -326,7 +326,7 @@ tr:hover td{background:var(--bg)}
     <button class="nlink nadmin" onclick="go('admin')"><span class="nav-icon">🔐</span> Admin</button>
   </nav>
   <div class="sidebar-footer">
-    <div class="sidebar-footer-text">Bren Imperia Cricket © 2024</div>
+    <div class="sidebar-footer-text">Bren Imperia Cricket © 2026</div>
   </div>
 </div>
 
@@ -515,7 +515,7 @@ tr:hover td{background:var(--bg)}
         <input type="password" id="adminPw" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()">
         <div style="color:var(--red);font-size:12px;margin-bottom:10px;text-align:left;display:none" id="loginErr">Incorrect password</div>
         <button class="btn btn-pur btn-full" onclick="doLogin()">Login</button>
-        <div class="hint">Default: <strong>cricket2026</strong></div>
+        <div class="hint">Default: <strong>your admin</strong></div>
       </div>
     </div>
     <div id="aPanel" style="display:none">
@@ -1065,7 +1065,7 @@ function renderAdmin(){
 }
 
 function doLogin(){
-  if(document.getElementById('adminPw').value==='cricket2026'){
+  if(document.getElementById('adminPw').value==='admin'){
     S.adminIn=true;document.getElementById('loginErr').style.display='none';
     renderAdmin();notify('Welcome, Admin! ✓','ok');
   } else document.getElementById('loginErr').style.display='block';
